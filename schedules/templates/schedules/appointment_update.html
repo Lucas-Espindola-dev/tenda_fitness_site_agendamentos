@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="main_title">
+        <h2>Editar Agendamento</h2>
+    </div>
+    <div class="new_appointment_form">
+        <form method="post">
+            {% csrf_token %}
+            <div class="form_day">
+                <label for="id_day">Data:</label>
+                {{ form.day }}
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                {% for time in form.time.field.queryset %}
+                <input type="checkbox" class="btn-check" id="time_{{time.id}}" name="time" value="{{time.id}}" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="time_{{time.id}}">{{ time }}</label>
+                {% endfor %}
+            </div>
+            <div class="form_repeat">
+                <label for="id_repeat">Repetir semanalmente:</label>
+                {{ form.repeat }}
+                <span class="checkmark"></span>
+            </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Agendar</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

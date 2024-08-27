@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(252, 252, 21);
+    color: black;
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(252, 252, 21);
+    color: black;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: rgba(95, 94, 94, 0.61);
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.container{
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo{
+    align-self: center;
+    padding-left: 15px;
+}
+
+.logo img{
+    width: 300px;
+}
+
+.options_home{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.scheduling_button{
+    width: 300px;
+    color: #fff;
+    margin-right: 8px;
+    background: rgb(252, 252, 21);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    border: 0;
+    vertical-align: middle;
+    padding: 0;
+    font-size: 18px;
+    line-height: 2em;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.scheduling_button i{
+    padding-top: 30px;
+    font-size: 35px;
+    color: black;
+}
+
+.scheduling_button p{
+    padding-top: -5px;
+    color: black;
+    font-size: 25px;
+}
+
+.scheduling_button a{
+    text-decoration: none;
+}
+
+.my_account_buttom {
+    width: 300px;
+    color: #fff;
+    margin-right: 8px;
+    background: rgb(53, 50, 50);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    border: 0;
+    vertical-align: middle;
+    padding: 0;
+    font-size: 18px;
+    line-height: 2em;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.my_account_buttom i {
+    padding-top: 30px;
+    font-size: 35px;
+    color: whitesmoke;
+}
+
+.my_account_buttom p {
+    padding-top: -5px;
+    color: white;
+    font-size: 25px;
+}
+
+.my_account_buttom a{
+    text-decoration: none;
+}
+
+.main_title h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.new_appointment_form {
+    text-align: center;
+}
+
+.form_day {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.form_day label {
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+.form_day input {
+    background-color: #e2edf8;
+    font-size: 18px;
+    padding: 2px;
+    font-family: "Roboto Mono", monospace;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.form_repeat {
+    display: block;
+    position: relative;
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-bottom: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.form_repeat input{
+    font-size: large;
+}
+
+.form_time {
+    min-width: 100px;
+}
+
+.form_time label{
+    font-size: 2rem;
+}
+
+.form_time select{
+    appearance: none;
+    width: 50%;
+    font-size: 1rem;
+    padding: 0.5em 5em 0.5em 1em;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.title_user_schedules h2{
+    font-size: 45px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
+
+.user-appointments-list {
+    text-align: left;
+    font-size: 25px;
+
+}
+
+/* MOBILE */
+@media (max-width: 450px) {
+    body{
+        background-color: whitesmoke;
+    }
+
+    
+}

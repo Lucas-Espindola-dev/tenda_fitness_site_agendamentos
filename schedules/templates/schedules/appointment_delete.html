@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h3 class="display-4">Deletar Agendamento</h3>
+        
+        <div class="card">
+            <div class="card-body"> 
+                <p class="card-text">Tem certeza de que deseja excluir este Agendamento?</p>
+
+                <form method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">Deletar</button>
+                </form>
+
+                <a href="{% url 'appointments-create' %}" class="btn btn-secondary mt-3">Cancelar e Voltar para lista de Agendamentos?</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
